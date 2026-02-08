@@ -1,0 +1,86 @@
+/* блокируем прокрутку при открытом лайтбоксе */
+.jg-lb-open { overflow: hidden; }
+
+.jg-lb {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: none;
+}
+
+.jg-lb.is-open { display: block; }
+
+.jg-lb__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+}
+
+.jg-lb__dialog {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.jg-lb__stage {
+  max-width: min(1100px, 92vw);
+  max-height: 82vh;
+  display: grid;
+  place-items: center;
+}
+
+.jg-lb__img {
+  max-width: 100%;
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+}
+
+.jg-lb__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+.jg-lb__close {
+  top: 24px;
+  right: 24px;
+  transform: none;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.jg-lb__prev { left: 24px; }
+.jg-lb__next { right: 24px; }
+
+.jg-lb__counter {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  background: rgba(0,0,0,0.35);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+@media (max-width: 640px) {
+  .jg-lb__prev { left: 10px; }
+  .jg-lb__next { right: 10px; }
+  .jg-lb__close { right: 10px; top: 10px; }
+}
