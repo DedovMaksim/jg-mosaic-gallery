@@ -35,12 +35,12 @@ It is lightweight, dependency-free by default, and designed for both developers 
 ## Usage
 
 ### Basic shortcode
-
+```text
 [jg_mosaic ids="1,2,3,4"]
-
+```
 
 Full example
-
+```text
 [jg_mosaic
   ids="2319,2318,2314,2304,2263,2250"
   layout="mosaic"
@@ -51,7 +51,7 @@ Full example
   mobile_breakpoint="560"
   mobile_patterns="p2,p3l,p3r"
 ]
-
+```
 Available Mosaic Patterns
 Key	Description
 p2	2 images
@@ -153,3 +153,8 @@ Swipe support in lightbox
 
 GPLv2 or later
 https://www.gnu.org/licenses/gpl-2.0.html
+
+## 🌐 Project Page
+
+Full documentation and development story:
+https://maksimdedov.ru/cases/jg-mosaic-gallery/
