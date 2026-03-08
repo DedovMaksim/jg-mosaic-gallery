@@ -109,20 +109,35 @@ lightbox="fancybox" | "link" | "none"
 
 ## Project Structure
 jg-mosaic-gallery/
+
 ├── assets/
+
 │   └── dist/
+
 │       ├── jg-mosaic-core.js
+
 │       ├── jg-mosaic-core.css
+
 │       ├── jg-mosaic-lightbox.js
+
 │       └── jg-mosaic-lightbox.css
+
 ├── includes/
+
 │   ├── Plugin.php
+
 │   ├── Assets.php
+
 │   ├── Settings.php
+
 │   └── Shortcode.php
+
 ├── jg-mosaic-gallery.php
+
 ├── readme.txt      # WordPress.org readme
+
 ├── README.md       # GitHub readme
+
 └── CHANGELOG.md
 
 ## Development Notes
